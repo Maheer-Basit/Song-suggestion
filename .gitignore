@@ -1,3 +1,4 @@
 /.cache
 /spotify_model.pkl
 /__pycache__
+/dataset.csv
