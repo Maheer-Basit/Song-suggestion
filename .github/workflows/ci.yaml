@@ -26,7 +26,17 @@ jobs:
         echo "Poker Face,Lady Gaga,The Fame,0.85,0.80,-4.1,0.14,0.01,0.0,0.12,0.78,119.0" >> dataset.csv
         echo "Buttons,The Pussycat Dolls,PCD,0.81,0.82,-3.5,0.09,0.05,0.0,0.15,0.88,105.0" >> dataset.csv
         echo "Hot N Cold,Katy Perry,One of the Boys,0.70,0.85,-3.2,0.04,0.01,0.0,0.18,0.85,132.0" >> dataset.csv
-
+        echo "Umbrella,Rihanna,Good Girl Gone Bad,0.72,0.83,-4.5,0.04,0.01,0.0,0.04,0.62,126.0" >> dataset.csv
+        echo "Single Ladies,Beyonce,I Am... Sasha Fierce,0.80,0.70,-5.2,0.29,0.04,0.0,0.19,0.29,193.0" >> dataset.csv
+        echo "Disturbia,Rihanna,Good Girl Gone Bad,0.71,0.81,-4.1,0.06,0.09,0.0,0.24,0.71,125.0" >> dataset.csv
+        echo "Just Dance,Lady Gaga,The Fame,0.82,0.74,-4.3,0.04,0.02,0.0,0.20,0.75,119.0" >> dataset.csv
+        echo "Bad Romance,Lady Gaga,The Fame Monster,0.70,0.92,-3.8,0.04,0.01,0.0,0.08,0.71,119.0" >> dataset.csv
+        echo "Telephone,Lady Gaga,The Fame Monster,0.83,0.82,-3.5,0.04,0.01,0.0,0.11,0.71,122.0" >> dataset.csv
+        echo "Circus,Britney Spears,Circus,0.79,0.75,-4.4,0.05,0.14,0.0,0.07,0.76,115.0" >> dataset.csv
+        echo "Womanizer,Britney Spears,Circus,0.72,0.91,-2.9,0.06,0.01,0.0,0.19,0.24,139.0" >> dataset.csv
+        echo "Tik Tok,Kesha,Animal,0.76,0.83,-3.1,0.05,0.10,0.0,0.28,0.73,120.0" >> dataset.csv
+        echo "Die Young,Kesha,Warrior,0.71,0.70,-4.5,0.04,0.01,0.0,0.22,0.80,128.0" >> dataset.csv
+        
     - name: Cache Pip Packages
       uses: actions/cache@v4
       with:
