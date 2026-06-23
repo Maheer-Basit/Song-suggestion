@@ -1,13 +1,17 @@
-FROM python:3.10-slim
+FROM python:3.11-slim
 
-WORKDIR /code
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Install data science and web server dependencies
-RUN pip install fastapi uvicorn pydantic scikit-learn joblib pandas
+WORKDIR /app
 
-# Copy the app and the trained AI brain into the container
-COPY ./app.py /code/app.py
-COPY ./spotify_model.pkl /code/spotify_model.pkl
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
+
+COPY app.py /app/app.py
+
 
 EXPOSE 8000
 
